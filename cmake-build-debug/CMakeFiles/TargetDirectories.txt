@@ -1,0 +1,3 @@
+/Users/artur/Desktop/nauka/evolution/cmake-build-debug/CMakeFiles/evolution.dir
+/Users/artur/Desktop/nauka/evolution/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/artur/Desktop/nauka/evolution/cmake-build-debug/CMakeFiles/rebuild_cache.dir

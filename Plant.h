@@ -6,12 +6,14 @@
 #define EVOLUTION_PLANT_H
 
 
+#include <vector>
+
 class Plant {
 
 public:
+    Plant(): energy(10){}
     void grow();
-
-private:
+    void reproduce(std::vector<Plant>&plants);
     int energy;
 };
 
