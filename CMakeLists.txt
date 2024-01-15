@@ -12,4 +12,8 @@ add_executable(evolution main.cpp
         Species.h
         Prey.cpp
         Prey.h
+        Animals.cpp
+        Animals.h
+        Flora.cpp
+        Flora.h
 )

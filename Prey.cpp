@@ -6,7 +6,7 @@
 #include <vector>
 #include "Plant.h"
 
-void Prey::eat(std::vector<Prey>preys,std::vector<Plant>&plants) {
+void Prey::eat(std::vector<Prey>&preys,std::vector<Plant>&plants) {
 
     if(!plants.empty()){
         plants.erase(plants.begin());
@@ -16,7 +16,7 @@ void Prey::eat(std::vector<Prey>preys,std::vector<Plant>&plants) {
 
 }
 
-void Prey::reproduce(std::vector<Prey> preys, std::vector<Plant> &plants) {
+void Prey::reproduce(std::vector<Prey>&preys, std::vector<Plant> &plants) {
     for (auto prey: preys) {
         if(prey.energy>20){
             plants.emplace_back();

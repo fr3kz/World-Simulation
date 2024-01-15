@@ -7,7 +7,11 @@
 #include <iostream>
 
 void Plant::grow() {
+
     energy+=2;
+
+    float e = static_cast<float>(energy) * bonus;
+    energy = static_cast<int>(e);
 }
 
 void Plant::reproduce(std::vector<Plant>&plants) {
@@ -17,3 +21,4 @@ void Plant::reproduce(std::vector<Plant>&plants) {
            }
     }
 }
+

@@ -7,12 +7,15 @@
 
 #include <vector>
 #include "Plant.h"
-class Prey {
+#include "Species.h"
+#include "Animals.h"
+
+class Prey: public Animals{
 public:
     int energy;
     Prey():energy(20){};
-    void eat(std::vector<Prey>preys,std::vector<Plant>&plants);
-    void reproduce(std::vector<Prey>preys,std::vector<Plant>&plants);
+    virtual void eat(std::vector<Prey>&preys,std::vector<Plant>&plants);
+    virtual void reproduce(std::vector<Prey>&preys,std::vector<Plant>&plants);
 
 };
 

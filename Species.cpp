@@ -3,3 +3,7 @@
 //
 
 #include "Species.h"
+
+void Species::eat() const {
+
+}

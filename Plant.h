@@ -7,12 +7,13 @@
 
 
 #include <vector>
-
-class Plant {
+#include "Species.h"
+#include "Flora.h"
+class Plant: public Flora {
 
 public:
     Plant(): energy(10){}
-    void grow();
+    void grow() override;
     void reproduce(std::vector<Plant>&plants);
     int energy;
 };
