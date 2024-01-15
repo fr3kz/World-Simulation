@@ -16,7 +16,7 @@ void Plant::grow() {
 
 void Plant::reproduce(std::vector<Plant>&plants) {
     for (auto plant: plants) {
-           if(plant.energy>15){
+           if(plant.energy>13){
                plants.emplace_back();
            }
     }

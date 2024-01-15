@@ -8,6 +8,8 @@
 #include "Species.h"
 
 class Animals: public Species {
+public:
+    virtual void eat();
 
 };
 

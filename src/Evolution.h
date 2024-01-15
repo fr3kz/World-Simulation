@@ -7,6 +7,7 @@
 #include "Plant.h"
 #include "Prey.h"
 #include "Species.h"
+#include "Predators.h"
 
 class Evolution {
 
@@ -15,11 +16,12 @@ public:
     void simulate();
     void show_data();
     void create_base_life();
-    void delete_plant();
     std::vector<Plant>plants;
     std::vector<Prey> preys;
+    std::vector<Predators>predators;
     int plants_day=-1;
     int preys_day=-1;
+    int predators_day=-1;
     int day;
 };
 

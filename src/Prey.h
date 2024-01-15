@@ -12,11 +12,10 @@
 
 class Prey: public Animals{
 public:
-    int energy;
-    Prey():energy(20){};
+    Prey(): health(10){};
     virtual void eat(std::vector<Prey>&preys,std::vector<Plant>&plants);
     virtual void reproduce(std::vector<Prey>&preys,std::vector<Plant>&plants);
-
+    float health;
 };
 
 

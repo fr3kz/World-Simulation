@@ -18,7 +18,7 @@ void Prey::eat(std::vector<Prey>&preys,std::vector<Plant>&plants) {
 
 void Prey::reproduce(std::vector<Prey>&preys, std::vector<Plant> &plants) {
     for (auto prey: preys) {
-        if(prey.energy>20){
+        if(prey.energy>16){
             plants.emplace_back();
         }
     }

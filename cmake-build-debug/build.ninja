@@ -52,44 +52,58 @@ build cmake_object_order_depends_target_evolution: phony || CMakeFiles/evolution
 build CMakeFiles/evolution.dir/main.cpp.o: CXX_COMPILER__evolution_unscanned_Debug /Users/artur/Desktop/nauka/evolution/main.cpp || cmake_object_order_depends_target_evolution
   DEP_FILE = CMakeFiles/evolution.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src
   OBJECT_DIR = CMakeFiles/evolution.dir
   OBJECT_FILE_DIR = CMakeFiles/evolution.dir
 
-build CMakeFiles/evolution.dir/Evolution.cpp.o: CXX_COMPILER__evolution_unscanned_Debug /Users/artur/Desktop/nauka/evolution/Evolution.cpp || cmake_object_order_depends_target_evolution
-  DEP_FILE = CMakeFiles/evolution.dir/Evolution.cpp.o.d
+build CMakeFiles/evolution.dir/src/Evolution.cpp.o: CXX_COMPILER__evolution_unscanned_Debug /Users/artur/Desktop/nauka/evolution/src/Evolution.cpp || cmake_object_order_depends_target_evolution
+  DEP_FILE = CMakeFiles/evolution.dir/src/Evolution.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src
   OBJECT_DIR = CMakeFiles/evolution.dir
-  OBJECT_FILE_DIR = CMakeFiles/evolution.dir
+  OBJECT_FILE_DIR = CMakeFiles/evolution.dir/src
 
-build CMakeFiles/evolution.dir/Plant.cpp.o: CXX_COMPILER__evolution_unscanned_Debug /Users/artur/Desktop/nauka/evolution/Plant.cpp || cmake_object_order_depends_target_evolution
-  DEP_FILE = CMakeFiles/evolution.dir/Plant.cpp.o.d
+build CMakeFiles/evolution.dir/src/Plant.cpp.o: CXX_COMPILER__evolution_unscanned_Debug /Users/artur/Desktop/nauka/evolution/src/Plant.cpp || cmake_object_order_depends_target_evolution
+  DEP_FILE = CMakeFiles/evolution.dir/src/Plant.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src
   OBJECT_DIR = CMakeFiles/evolution.dir
-  OBJECT_FILE_DIR = CMakeFiles/evolution.dir
+  OBJECT_FILE_DIR = CMakeFiles/evolution.dir/src
 
-build CMakeFiles/evolution.dir/Species.cpp.o: CXX_COMPILER__evolution_unscanned_Debug /Users/artur/Desktop/nauka/evolution/Species.cpp || cmake_object_order_depends_target_evolution
-  DEP_FILE = CMakeFiles/evolution.dir/Species.cpp.o.d
+build CMakeFiles/evolution.dir/src/Species.cpp.o: CXX_COMPILER__evolution_unscanned_Debug /Users/artur/Desktop/nauka/evolution/src/Species.cpp || cmake_object_order_depends_target_evolution
+  DEP_FILE = CMakeFiles/evolution.dir/src/Species.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src
   OBJECT_DIR = CMakeFiles/evolution.dir
-  OBJECT_FILE_DIR = CMakeFiles/evolution.dir
+  OBJECT_FILE_DIR = CMakeFiles/evolution.dir/src
 
-build CMakeFiles/evolution.dir/Prey.cpp.o: CXX_COMPILER__evolution_unscanned_Debug /Users/artur/Desktop/nauka/evolution/Prey.cpp || cmake_object_order_depends_target_evolution
-  DEP_FILE = CMakeFiles/evolution.dir/Prey.cpp.o.d
+build CMakeFiles/evolution.dir/src/Prey.cpp.o: CXX_COMPILER__evolution_unscanned_Debug /Users/artur/Desktop/nauka/evolution/src/Prey.cpp || cmake_object_order_depends_target_evolution
+  DEP_FILE = CMakeFiles/evolution.dir/src/Prey.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src
   OBJECT_DIR = CMakeFiles/evolution.dir
-  OBJECT_FILE_DIR = CMakeFiles/evolution.dir
+  OBJECT_FILE_DIR = CMakeFiles/evolution.dir/src
 
-build CMakeFiles/evolution.dir/Animals.cpp.o: CXX_COMPILER__evolution_unscanned_Debug /Users/artur/Desktop/nauka/evolution/Animals.cpp || cmake_object_order_depends_target_evolution
-  DEP_FILE = CMakeFiles/evolution.dir/Animals.cpp.o.d
+build CMakeFiles/evolution.dir/src/Animals.cpp.o: CXX_COMPILER__evolution_unscanned_Debug /Users/artur/Desktop/nauka/evolution/src/Animals.cpp || cmake_object_order_depends_target_evolution
+  DEP_FILE = CMakeFiles/evolution.dir/src/Animals.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src
   OBJECT_DIR = CMakeFiles/evolution.dir
-  OBJECT_FILE_DIR = CMakeFiles/evolution.dir
+  OBJECT_FILE_DIR = CMakeFiles/evolution.dir/src
 
-build CMakeFiles/evolution.dir/Flora.cpp.o: CXX_COMPILER__evolution_unscanned_Debug /Users/artur/Desktop/nauka/evolution/Flora.cpp || cmake_object_order_depends_target_evolution
-  DEP_FILE = CMakeFiles/evolution.dir/Flora.cpp.o.d
+build CMakeFiles/evolution.dir/src/Flora.cpp.o: CXX_COMPILER__evolution_unscanned_Debug /Users/artur/Desktop/nauka/evolution/src/Flora.cpp || cmake_object_order_depends_target_evolution
+  DEP_FILE = CMakeFiles/evolution.dir/src/Flora.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src
   OBJECT_DIR = CMakeFiles/evolution.dir
-  OBJECT_FILE_DIR = CMakeFiles/evolution.dir
+  OBJECT_FILE_DIR = CMakeFiles/evolution.dir/src
+
+build CMakeFiles/evolution.dir/src/Predators.cpp.o: CXX_COMPILER__evolution_unscanned_Debug /Users/artur/Desktop/nauka/evolution/src/Predators.cpp || cmake_object_order_depends_target_evolution
+  DEP_FILE = CMakeFiles/evolution.dir/src/Predators.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src
+  OBJECT_DIR = CMakeFiles/evolution.dir
+  OBJECT_FILE_DIR = CMakeFiles/evolution.dir/src
 
 
 # =============================================================================
@@ -99,7 +113,7 @@ build CMakeFiles/evolution.dir/Flora.cpp.o: CXX_COMPILER__evolution_unscanned_De
 #############################################
 # Link the executable evolution
 
-build evolution: CXX_EXECUTABLE_LINKER__evolution_Debug CMakeFiles/evolution.dir/main.cpp.o CMakeFiles/evolution.dir/Evolution.cpp.o CMakeFiles/evolution.dir/Plant.cpp.o CMakeFiles/evolution.dir/Species.cpp.o CMakeFiles/evolution.dir/Prey.cpp.o CMakeFiles/evolution.dir/Animals.cpp.o CMakeFiles/evolution.dir/Flora.cpp.o
+build evolution: CXX_EXECUTABLE_LINKER__evolution_Debug CMakeFiles/evolution.dir/main.cpp.o CMakeFiles/evolution.dir/src/Evolution.cpp.o CMakeFiles/evolution.dir/src/Plant.cpp.o CMakeFiles/evolution.dir/src/Species.cpp.o CMakeFiles/evolution.dir/src/Prey.cpp.o CMakeFiles/evolution.dir/src/Animals.cpp.o CMakeFiles/evolution.dir/src/Flora.cpp.o CMakeFiles/evolution.dir/src/Predators.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk
   OBJECT_DIR = CMakeFiles/evolution.dir
   POST_BUILD = :

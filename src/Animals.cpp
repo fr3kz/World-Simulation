@@ -3,3 +3,7 @@
 //
 
 #include "Animals.h"
+
+void Animals::eat() {
+
+}

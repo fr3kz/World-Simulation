@@ -13,6 +13,7 @@ class Species {
 public:
     virtual void eat() const;
     float health;
+    float energy;
 
 };
 

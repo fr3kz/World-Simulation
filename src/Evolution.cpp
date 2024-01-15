@@ -10,7 +10,7 @@
 
 void Evolution::simulate() {
 
-    day = 100;
+    day = 1000;
     //20 days
     for (int i = 0; i < day; ++i) {
 
@@ -26,6 +26,12 @@ void Evolution::simulate() {
             break;
         }
 
+        for(auto &pred:predators){
+            pred.eat(preys,predators);
+            pred.reproduce(predators);
+            break;
+        }
+
         /// check after each day
 
         if(!preys.empty()){
@@ -34,6 +40,10 @@ void Evolution::simulate() {
 
         if (!plants.empty()){
             plants_day = i;
+        }
+
+        if(!predators.empty()){
+            predators_day = i;
         }
 
 
@@ -71,11 +81,25 @@ void Evolution::show_data() {
         prday = preys_day;
     }
 
+    //Predators
+    int predators_number = static_cast<int>( predators.size());
+    int predday;
+    if(predators_day==-1){
+        predday = day;
+    }else{
+        predday = predators_day;
+    }
+
+
     std::cout << "Tyle jest prey " << preys_count << std::endl;
     std::cout << "Tyle jest plantow " << plants_number << std::endl;
-    std::cout << "To jest max energia u planta" << max_energy << std::endl;
+    std::cout << "Tyle jest drapieznikow " << predators_number << std::endl;
+
+
     std::cout << plday << " / " << day << " Dni zycia plantow"<< std::endl;
     std::cout << prday << " / " << day << " Dni zycia prey"<< std::endl;
+    std::cout << predday << " / " << day << " Dni zycia drapieznika"<< std::endl;
+
 
 
 
@@ -84,24 +108,24 @@ void Evolution::show_data() {
 }
 
 void Evolution::create_base_life() {
-    for (int i = 0; i < 10; ++i) {
+    for (int i = 0; i < 500; ++i) {
 
         plants.emplace_back();
 
     }
-    for (int i = 0; i < 50; ++i) {
+    for (int i = 0; i < 100; ++i) {
 
         preys.emplace_back();
 
     }
-}
+    for (int i = 0; i < 5; ++i) {
 
-void Evolution::delete_plant() {
-    if((!plants.empty())&& (plants.size() >1)){
-        plants.erase(plants.begin());
+        predators.emplace_back();
+
     }
-
 }
+
+
 
 Evolution::Evolution() {
     create_base_life();
