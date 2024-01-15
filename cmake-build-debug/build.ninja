@@ -47,61 +47,61 @@ cmake_ninja_workdir = /Users/artur/Desktop/nauka/evolution/cmake-build-debug/
 #############################################
 # Order-only phony target for evolution
 
-build cmake_object_order_depends_target_evolution: phony || CMakeFiles/evolution.dir
+build cmake_object_order_depends_target_evolution: phony || cmake_object_order_depends_target_fmt
 
 build CMakeFiles/evolution.dir/main.cpp.o: CXX_COMPILER__evolution_unscanned_Debug /Users/artur/Desktop/nauka/evolution/main.cpp || cmake_object_order_depends_target_evolution
   DEP_FILE = CMakeFiles/evolution.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src
+  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src -I/Users/artur/Desktop/nauka/evolution/lib/fmt/include
   OBJECT_DIR = CMakeFiles/evolution.dir
   OBJECT_FILE_DIR = CMakeFiles/evolution.dir
 
 build CMakeFiles/evolution.dir/src/Evolution.cpp.o: CXX_COMPILER__evolution_unscanned_Debug /Users/artur/Desktop/nauka/evolution/src/Evolution.cpp || cmake_object_order_depends_target_evolution
   DEP_FILE = CMakeFiles/evolution.dir/src/Evolution.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src
+  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src -I/Users/artur/Desktop/nauka/evolution/lib/fmt/include
   OBJECT_DIR = CMakeFiles/evolution.dir
   OBJECT_FILE_DIR = CMakeFiles/evolution.dir/src
 
 build CMakeFiles/evolution.dir/src/Plant.cpp.o: CXX_COMPILER__evolution_unscanned_Debug /Users/artur/Desktop/nauka/evolution/src/Plant.cpp || cmake_object_order_depends_target_evolution
   DEP_FILE = CMakeFiles/evolution.dir/src/Plant.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src
+  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src -I/Users/artur/Desktop/nauka/evolution/lib/fmt/include
   OBJECT_DIR = CMakeFiles/evolution.dir
   OBJECT_FILE_DIR = CMakeFiles/evolution.dir/src
 
 build CMakeFiles/evolution.dir/src/Species.cpp.o: CXX_COMPILER__evolution_unscanned_Debug /Users/artur/Desktop/nauka/evolution/src/Species.cpp || cmake_object_order_depends_target_evolution
   DEP_FILE = CMakeFiles/evolution.dir/src/Species.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src
+  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src -I/Users/artur/Desktop/nauka/evolution/lib/fmt/include
   OBJECT_DIR = CMakeFiles/evolution.dir
   OBJECT_FILE_DIR = CMakeFiles/evolution.dir/src
 
 build CMakeFiles/evolution.dir/src/Prey.cpp.o: CXX_COMPILER__evolution_unscanned_Debug /Users/artur/Desktop/nauka/evolution/src/Prey.cpp || cmake_object_order_depends_target_evolution
   DEP_FILE = CMakeFiles/evolution.dir/src/Prey.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src
+  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src -I/Users/artur/Desktop/nauka/evolution/lib/fmt/include
   OBJECT_DIR = CMakeFiles/evolution.dir
   OBJECT_FILE_DIR = CMakeFiles/evolution.dir/src
 
 build CMakeFiles/evolution.dir/src/Animals.cpp.o: CXX_COMPILER__evolution_unscanned_Debug /Users/artur/Desktop/nauka/evolution/src/Animals.cpp || cmake_object_order_depends_target_evolution
   DEP_FILE = CMakeFiles/evolution.dir/src/Animals.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src
+  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src -I/Users/artur/Desktop/nauka/evolution/lib/fmt/include
   OBJECT_DIR = CMakeFiles/evolution.dir
   OBJECT_FILE_DIR = CMakeFiles/evolution.dir/src
 
 build CMakeFiles/evolution.dir/src/Flora.cpp.o: CXX_COMPILER__evolution_unscanned_Debug /Users/artur/Desktop/nauka/evolution/src/Flora.cpp || cmake_object_order_depends_target_evolution
   DEP_FILE = CMakeFiles/evolution.dir/src/Flora.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src
+  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src -I/Users/artur/Desktop/nauka/evolution/lib/fmt/include
   OBJECT_DIR = CMakeFiles/evolution.dir
   OBJECT_FILE_DIR = CMakeFiles/evolution.dir/src
 
 build CMakeFiles/evolution.dir/src/Predators.cpp.o: CXX_COMPILER__evolution_unscanned_Debug /Users/artur/Desktop/nauka/evolution/src/Predators.cpp || cmake_object_order_depends_target_evolution
   DEP_FILE = CMakeFiles/evolution.dir/src/Predators.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src
+  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src -I/Users/artur/Desktop/nauka/evolution/lib/fmt/include
   OBJECT_DIR = CMakeFiles/evolution.dir
   OBJECT_FILE_DIR = CMakeFiles/evolution.dir/src
 
@@ -113,8 +113,9 @@ build CMakeFiles/evolution.dir/src/Predators.cpp.o: CXX_COMPILER__evolution_unsc
 #############################################
 # Link the executable evolution
 
-build evolution: CXX_EXECUTABLE_LINKER__evolution_Debug CMakeFiles/evolution.dir/main.cpp.o CMakeFiles/evolution.dir/src/Evolution.cpp.o CMakeFiles/evolution.dir/src/Plant.cpp.o CMakeFiles/evolution.dir/src/Species.cpp.o CMakeFiles/evolution.dir/src/Prey.cpp.o CMakeFiles/evolution.dir/src/Animals.cpp.o CMakeFiles/evolution.dir/src/Flora.cpp.o CMakeFiles/evolution.dir/src/Predators.cpp.o
+build evolution: CXX_EXECUTABLE_LINKER__evolution_Debug CMakeFiles/evolution.dir/main.cpp.o CMakeFiles/evolution.dir/src/Evolution.cpp.o CMakeFiles/evolution.dir/src/Plant.cpp.o CMakeFiles/evolution.dir/src/Species.cpp.o CMakeFiles/evolution.dir/src/Prey.cpp.o CMakeFiles/evolution.dir/src/Animals.cpp.o CMakeFiles/evolution.dir/src/Flora.cpp.o CMakeFiles/evolution.dir/src/Predators.cpp.o | lib/fmt/libfmtd.a || lib/fmt/libfmtd.a
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk
+  LINK_LIBRARIES = lib/fmt/libfmtd.a
   OBJECT_DIR = CMakeFiles/evolution.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -144,8 +145,164 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/artur/Desktop/nauka/evolution/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/artur/Desktop/nauka/evolution/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/artur/Desktop/nauka/evolution/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/artur/Desktop/nauka/evolution/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target fmt
+
+
+#############################################
+# Order-only phony target for fmt
+
+build cmake_object_order_depends_target_fmt: phony || lib/fmt/CMakeFiles/fmt.dir
+
+build lib/fmt/CMakeFiles/fmt.dir/src/format.cc.o: CXX_COMPILER__fmt_unscanned_Debug /Users/artur/Desktop/nauka/evolution/lib/fmt/src/format.cc || cmake_object_order_depends_target_fmt
+  DEP_FILE = lib/fmt/CMakeFiles/fmt.dir/src/format.cc.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src -I/Users/artur/Desktop/nauka/evolution/lib/fmt/include
+  OBJECT_DIR = lib/fmt/CMakeFiles/fmt.dir
+  OBJECT_FILE_DIR = lib/fmt/CMakeFiles/fmt.dir/src
+
+build lib/fmt/CMakeFiles/fmt.dir/src/os.cc.o: CXX_COMPILER__fmt_unscanned_Debug /Users/artur/Desktop/nauka/evolution/lib/fmt/src/os.cc || cmake_object_order_depends_target_fmt
+  DEP_FILE = lib/fmt/CMakeFiles/fmt.dir/src/os.cc.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/artur/Desktop/nauka/evolution/src -I/Users/artur/Desktop/nauka/evolution/lib/fmt/include
+  OBJECT_DIR = lib/fmt/CMakeFiles/fmt.dir
+  OBJECT_FILE_DIR = lib/fmt/CMakeFiles/fmt.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target fmt
+
+
+#############################################
+# Link the static library lib/fmt/libfmtd.a
+
+build lib/fmt/libfmtd.a: CXX_STATIC_LIBRARY_LINKER__fmt_Debug lib/fmt/CMakeFiles/fmt.dir/src/format.cc.o lib/fmt/CMakeFiles/fmt.dir/src/os.cc.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = lib/fmt/CMakeFiles/fmt.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/fmt/libfmtd.a
+  TARGET_PDB = fmtd.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build lib/fmt/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/artur/Desktop/nauka/evolution/cmake-build-debug/lib/fmt && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build lib/fmt/edit_cache: phony lib/fmt/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build lib/fmt/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/artur/Desktop/nauka/evolution/cmake-build-debug/lib/fmt && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/artur/Desktop/nauka/evolution -B/Users/artur/Desktop/nauka/evolution/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build lib/fmt/rebuild_cache: phony lib/fmt/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build lib/fmt/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build lib/fmt/CMakeFiles/install.util: CUSTOM_COMMAND lib/fmt/all
+  COMMAND = cd /Users/artur/Desktop/nauka/evolution/cmake-build-debug/lib/fmt && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build lib/fmt/install: phony lib/fmt/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build lib/fmt/CMakeFiles/install/local.util: CUSTOM_COMMAND lib/fmt/all
+  COMMAND = cd /Users/artur/Desktop/nauka/evolution/cmake-build-debug/lib/fmt && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build lib/fmt/install/local: phony lib/fmt/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build lib/fmt/CMakeFiles/install/strip.util: CUSTOM_COMMAND lib/fmt/all
+  COMMAND = cd /Users/artur/Desktop/nauka/evolution/cmake-build-debug/lib/fmt && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build lib/fmt/install/strip: phony lib/fmt/CMakeFiles/install/strip.util
+
 # =============================================================================
 # Target aliases.
+
+build fmt: phony lib/fmt/libfmtd.a
+
+build libfmtd.a: phony lib/fmt/libfmtd.a
 
 # =============================================================================
 # Folder targets.
@@ -155,7 +312,14 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/artur/Desktop/nauka/evolution/cmake-build-debug
 
-build all: phony evolution
+build all: phony evolution lib/fmt/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/artur/Desktop/nauka/evolution/cmake-build-debug/lib/fmt
+
+build lib/fmt/all: phony lib/fmt/libfmtd.a
 
 # =============================================================================
 # Built-in targets
@@ -164,14 +328,14 @@ build all: phony evolution
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/UnixPaths.cmake /Users/artur/Desktop/nauka/evolution/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeParseArguments.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Internal/CheckFlagCommonConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake /Users/artur/Desktop/nauka/evolution/CMakeLists.txt /Users/artur/Desktop/nauka/evolution/lib/fmt/CMakeLists.txt /Users/artur/Desktop/nauka/evolution/lib/fmt/support/cmake/JoinPaths.cmake /Users/artur/Desktop/nauka/evolution/lib/fmt/support/cmake/fmt-config.cmake.in /Users/artur/Desktop/nauka/evolution/lib/fmt/support/cmake/fmt.pc.in CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/UnixPaths.cmake /Users/artur/Desktop/nauka/evolution/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake: phony
+build /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeParseArguments.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CheckCXXCompilerFlag.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/GNUInstallDirs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Internal/CheckCompilerFlag.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Internal/CheckFlagCommonConfig.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/Platform/UnixPaths.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake /Users/artur/Desktop/nauka/evolution/CMakeLists.txt /Users/artur/Desktop/nauka/evolution/lib/fmt/CMakeLists.txt /Users/artur/Desktop/nauka/evolution/lib/fmt/support/cmake/JoinPaths.cmake /Users/artur/Desktop/nauka/evolution/lib/fmt/support/cmake/fmt-config.cmake.in /Users/artur/Desktop/nauka/evolution/lib/fmt/support/cmake/fmt.pc.in CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake: phony
 
 
 #############################################

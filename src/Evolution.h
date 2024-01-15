@@ -20,8 +20,11 @@ public:
     std::vector<Prey> preys;
     std::vector<Predators>predators;
     int plants_day=-1;
+    int count_plants;
     int preys_day=-1;
+    int count_preys;
     int predators_day=-1;
+    int count_predators;
     int day;
 };
 

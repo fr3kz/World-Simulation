@@ -5,20 +5,19 @@
 #include "Predators.h"
 
 void Predators::eat(std::vector<Prey>&preys,std::vector<Predators>&predators) {
-    //sprawdzenie czy zyja preys do jedzenia
+    //TODO: funkcja ktora okresla co zje predator czy innego predatora czy prey
 
     if (!preys.empty()){
         preys.erase(preys.begin());
         energy+=3;
     }else{
         predators.erase(predators.begin());
-        energy =-1;
     }
 }
 
 void Predators::reproduce(std::vector<Predators> &predators) {
     for (auto predator:predators) {
-        if(predator.energy > 25){
+        if(predator.energy > 18){
             predators.emplace_back();
         }
     }

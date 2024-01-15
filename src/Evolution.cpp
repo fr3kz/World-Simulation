@@ -3,10 +3,9 @@
 //
 
 #include "Evolution.h"
-
+#include <fmt/core.h>
 #include <vector>
 #include "Species.h"
-#include <iostream>
 
 void Evolution::simulate() {
 
@@ -69,7 +68,7 @@ void Evolution::show_data() {
     if(plants_day==-1){
         plday = day;
     }else{
-        plday = plants_day;
+        plday = plants_day+1;
     }
 
     //Prey
@@ -78,7 +77,7 @@ void Evolution::show_data() {
     if(preys_day==-1){
         prday = day;
     }else{
-        prday = preys_day;
+        prday = preys_day+1;
     }
 
     //Predators
@@ -87,18 +86,29 @@ void Evolution::show_data() {
     if(predators_day==-1){
         predday = day;
     }else{
-        predday = predators_day;
+        predday = predators_day+1;
     }
 
+    fmt::print("World's statistic");
+    fmt::print("\n{} Plants", count_plants);
+    fmt::print("\n{} Predators", count_predators);
+    fmt::print("\n{} Prey",count_preys);
 
-    std::cout << "Tyle jest prey " << preys_count << std::endl;
-    std::cout << "Tyle jest plantow " << plants_number << std::endl;
-    std::cout << "Tyle jest drapieznikow " << predators_number << std::endl;
+
+    fmt::print("\nWorlds population after {} days simulation",day);
+    fmt::print("\n Plants survived {} / {}  ", plants_number,count_plants);
+    fmt::print("\n Predators survived {} / {} ", predators_number,count_predators);
+    fmt::print("\n Prey survived {} / {} ", preys_count,count_preys);
 
 
-    std::cout << plday << " / " << day << " Dni zycia plantow"<< std::endl;
-    std::cout << prday << " / " << day << " Dni zycia prey"<< std::endl;
-    std::cout << predday << " / " << day << " Dni zycia drapieznika"<< std::endl;
+
+    fmt::print("\nWorlds survivors");
+    fmt::print("\n Plants survived {} / {} days ", plday,day);
+    fmt::print("\n Predators survived {} / {} days", predday,day);
+    fmt::print("\n Prey survived {} / {} days", prday,day);
+
+
+
 
 
 
@@ -108,17 +118,17 @@ void Evolution::show_data() {
 }
 
 void Evolution::create_base_life() {
-    for (int i = 0; i < 500; ++i) {
+    for (int i = 0; i < count_plants; ++i) {
 
         plants.emplace_back();
 
     }
-    for (int i = 0; i < 100; ++i) {
+    for (int i = 0; i < count_preys; ++i) {
 
         preys.emplace_back();
 
     }
-    for (int i = 0; i < 5; ++i) {
+    for (int i = 0; i < count_predators; ++i) {
 
         predators.emplace_back();
 
@@ -128,5 +138,8 @@ void Evolution::create_base_life() {
 
 
 Evolution::Evolution() {
+    count_plants = 1500;
+    count_preys = 1000;
+    count_predators = 2;
     create_base_life();
 }

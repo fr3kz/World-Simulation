@@ -3,6 +3,7 @@ project(evolution)
 
 set(CMAKE_CXX_STANDARD 17)
 include_directories("${PROJECT_SOURCE_DIR}/src/")
+add_subdirectory("${PROJECT_SOURCE_DIR}/lib/fmt/")
 
 add_executable(evolution main.cpp
         src/Evolution.cpp
@@ -21,3 +22,5 @@ add_executable(evolution main.cpp
         src/Predators.h
         src/Predators.h
 )
+
+target_link_libraries(evolution fmt::fmt)
