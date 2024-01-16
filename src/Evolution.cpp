@@ -89,6 +89,24 @@ void Evolution::show_data() {
         predday = predators_day+1;
     }
 
+
+    //Count predator kill list
+    int pred_kill_count;
+    if (predators_number < count_predators){
+         pred_kill_count = count_predators-predators_number;
+    }else{
+         pred_kill_count = predators_number-count_predators;
+    }
+
+
+    int prey_kill_count;
+    //Count prey kill list
+    if (preys_count < count_preys){
+         prey_kill_count = count_preys-preys_count;
+    }else{
+         prey_kill_count = preys_count-count_preys;
+    }
+
     fmt::print("World's statistic");
     fmt::print("\n{} Plants", count_plants);
     fmt::print("\n{} Predators", count_predators);
@@ -102,17 +120,14 @@ void Evolution::show_data() {
 
 
 
-    fmt::print("\nWorlds survivors");
+    fmt::print("\n\n How many days survived");
     fmt::print("\n Plants survived {} / {} days ", plday,day);
     fmt::print("\n Predators survived {} / {} days", predday,day);
     fmt::print("\n Prey survived {} / {} days", prday,day);
 
-
-
-
-
-
-
+    fmt::print("\n\n Dead list");
+    fmt::print("\n {} predators was killed",pred_kill_count);
+    fmt::print("\n {} preys was killed",prey_kill_count);
 
 
 }
@@ -138,8 +153,8 @@ void Evolution::create_base_life() {
 
 
 Evolution::Evolution() {
-    count_plants = 1500;
-    count_preys = 1000;
-    count_predators = 2;
+    count_plants = 1100;
+    count_preys = 500;
+    count_predators = 50;
     create_base_life();
 }

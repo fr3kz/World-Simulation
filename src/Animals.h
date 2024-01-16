@@ -10,7 +10,9 @@
 class Animals: public Species {
 public:
     virtual void eat();
-
+    float helath;
+    int predator_deadlist;
+    int preys_deadlist;
 };
 
 

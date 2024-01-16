@@ -13,7 +13,6 @@ class Predators: public Animals {
 public:
     void eat(std::vector<Prey>&preys,std::vector<Predators>&predators);
     void reproduce(std::vector<Predators>&predators);
-
 };
 
 

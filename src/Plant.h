@@ -16,6 +16,7 @@ public:
     void grow() override;
     void reproduce(std::vector<Plant>&plants);
     int energy;
+    int dead_list;
 };
 
 

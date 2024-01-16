@@ -12,6 +12,7 @@ void Prey::eat(std::vector<Prey>&preys,std::vector<Plant>&plants) {
         plants.erase(plants.begin());
     }else{
         preys.erase(preys.begin());
+        preys_deadlist++;
     }
 
 }

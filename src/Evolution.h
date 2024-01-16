@@ -8,6 +8,7 @@
 #include "Prey.h"
 #include "Species.h"
 #include "Predators.h"
+#include "Animals.h"
 
 class Evolution {
 
@@ -26,6 +27,7 @@ public:
     int predators_day=-1;
     int count_predators;
     int day;
+
 };
 
 

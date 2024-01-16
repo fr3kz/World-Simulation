@@ -2,6 +2,9 @@
 #include "Evolution.h"
 
 int main() {
+    std::srand(static_cast<unsigned int>(std::time(nullptr)));
+
+
     Evolution evolution;
 
     evolution.simulate();
